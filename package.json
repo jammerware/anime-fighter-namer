@@ -1,0 +1,44 @@
+{
+  "name": "anime-fighter-namer",
+  "version": "1.0.1",
+  "description": "A handy Javascript/Typescript library (complete with CLI!) for creating the name of your next awesome anime fighter.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "test",
+    "ltest": "tsc && npm link && afn Blazblue"
+  },
+  "bin": {
+    "afn": "dist/shell/afn.shell.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jammerware/anime-fighter-namer.git"
+  },
+  "keywords": [
+    "silly",
+    "cli",
+    "anime-fighters"
+  ],
+  "author": "Jammerware",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jammerware/anime-fighter-namer/issues"
+  },
+  "homepage": "https://github.com/jammerware/anime-fighter-namer#readme",
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "shelljs": "^0.7.5"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.5.38",
+    "@types/shelljs": "^0.3.33",
+    "jasmine": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-requirejs": "^1.1.0",
+    "requirejs": "^2.3.2"
+  }
+}
