@@ -1,6 +1,6 @@
 {
   "name": "anime-fighter-namer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A handy Javascript/Typescript library (complete with CLI!) for creating the name of your next awesome anime fighter.",
   "main": "lib/index.js",
   "scripts": {

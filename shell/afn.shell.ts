@@ -1,21 +1,9 @@
 #! /usr/bin/env node
-declare let System: any;
-import { 
-    AnimeFighterNamer,
-    HasSuffixDecider,
-    PrefixNameMaker,
-    PrimaryNameMaker,
-    SuffixNameMaker
-} from '../lib';
+import { AnimeFighterNamer } from '../lib';
 
 import { exec } from 'shelljs';
 
-let namer = new AnimeFighterNamer(
-    new PrefixNameMaker(),
-    new PrimaryNameMaker(),
-    new SuffixNameMaker(),
-    new HasSuffixDecider()
-);
+let namer = AnimeFighterNamer.create();
 
 if (process.argv.length < 1) {
     exec("echo What series, though?");

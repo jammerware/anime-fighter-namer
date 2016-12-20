@@ -19,4 +19,13 @@ export class AnimeFighterNamer {
 
         return base;
     }
+
+    static create(): AnimeFighterNamer {
+        return new AnimeFighterNamer(
+           new PrefixNameMaker(),
+           new PrimaryNameMaker(),
+           new SuffixNameMaker(),
+           new HasSuffixDecider() 
+        );
+    }
 }
